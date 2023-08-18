@@ -1,0 +1,228 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: center;
+  margin:2%;
+  margin-left:5%;
+
+}
+
+.courses-options{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: flex-end;
+    justify-content: right;
+    margin: 1%;
+    padding: 1%;
+    align-items: right;
+    min-width: 500px;
+}
+
+.courses-btn {
+    margin-bottom: 10px;
+}
+h1.page-title {
+    text-align: left;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .page-title .folder-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+  
+  h1.page-title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 112, 192);
+  }
+
+.instructor-table {
+  border-collapse: separate;
+  margin: 0 auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.instructor-table thead tr {
+  background-color: rgb(0, 112, 192);
+  color: #ffffff;
+  text-align: left;
+}
+
+.instructor-table th,
+.instructor-table td {
+  padding: 12px 15px;
+}
+
+.instructor-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.instructor-table tbody tr:last-of-type {
+  border-bottom: 2px solid red;
+}
+
+.action-button {
+  padding: 8px 16px;
+  background-color: rgb(0, 112, 192);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #a90202;
+}
+
+.add-instructor-button {
+  padding: 8px 16px;
+  background-color: rgb(0, 112, 192);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-instructor-button:hover {
+  background-color: #219800;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 25%;
+    padding: 3%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .popup-content form {
+  margin-top: 20px;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.popup-content input,
+.popup-content select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.popup-content button[type="submit"] {
+  padding: 8px 16px;
+  background-color: rgb(0, 112, 192);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.popup-content button[type="submit"]:hover {
+  background-color: #219800;
+}
+
+.radio-options {
+  display: flex;
+}
+
+.radio-options div {
+  margin-right: 10px;
+}
+
+.radio-options input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #2196F3;
+  outline: none;
+  margin-right: 5px;
+}
+
+.radio-options input[type="radio"]:checked {
+  background-color: #2196F3;
+}
+
+.form-label {
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.option-select {
+    font-size: 14px;
+}
+.custom-radio {
+align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.approve-button:hover {
+  background-color: #219800;
+}
+
+.deny-button:hover {
+  background-color: #a90202;
+}

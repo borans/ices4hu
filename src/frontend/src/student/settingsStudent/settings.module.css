@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.containerSettings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2% auto;
+  width: 90%;
+  max-width: 800px;
+  background-color: rgb(220, 220, 220);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.inputBox {
+  background-color: rgb(187, 187, 187);
+  border-radius: 10px;
+  padding: 1%;
+  width: 90%;
+  margin: 1%;
+}
+
+.containerSettings h2 {
+  text-align: center;
+  color: rgb(0, 112, 192);
+}
+
+.containerSettings .input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.containerSettings label {
+  color: #555;
+}
+
+.containerSettings input[type="file"],
+.containerSettings input[type="text"],
+.containerSettings input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.containerSettings button.action-button {
+  background-color: rgb(0, 112, 192);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.containerSettings button.action-button:hover {
+  background-color: #219800;
+}
+
+.containerSettings input[type="text"]:read-only,
+.containerSettings input[type="email"]:read-only {
+  color: #000;
+}
+
+.containerSettings .inputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.containerSettings .inputContainer label {
+  width: 20%;
+  margin-right: 10px;
+}
+
+.containerSettings .input {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.containerSettings .inputReadOnly {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.containerSettings input[type="file"] {
+  position: relative;
+  overflow: hidden;
+}
+
+.containerSettings input[type="file"]::before {
+  content: 'Select a File';
+  display: block;
+  padding: 12px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.containerSettings .profilePictureContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.containerSettings input[type="file"]:hover::before {
+  background-color: #e0e0e0;
+}
+
+.containerSettings input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.containerSettings input[type="file"]:hover::after {
+  background-color: #219800;
+}
+
+.containerSettings .profilePicture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #dcdcdc;
+  margin-right: 10px;
+}
+
+.containerSettings .profilePicture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .containerSettings {
+    width: 90%;
+  }
+
+  .inputBox {
+    width: 90%;
+  }
+
+  .containerSettings .inputContainer label {
+    width: 30%;
+  }
+
+  .containerSettings .input {
+    width: 70%;
+  }
+}

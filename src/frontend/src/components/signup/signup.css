@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    text-align: center;
+}
+
+input[type='radio'] {
+    accent-color: #4782da;
+}
+
+.full-screen-container {
+    background-image: url("../../assets/login_background.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.singup-container {
+    background-color: #cececeae;
+    padding: 50px 30px;
+    min-width: 400px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    max-width: 600px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hu_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hu_logo img {
+    height: auto;
+    object-fit: contain;
+    min-width: 40px;
+    max-width: 80px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+.role-selection{
+    align-items: column;
+}
+
+
+.signup-form{
+    border: 3px solid #0070c0;
+    justify-content: space-between;
+}
+
+.role-selection{
+    border-bottom: 2px solid #0070c0;
+}
+
+.radioDM{
+    margin-left: 50px;
+    border-left: 2px solid #0070c0;
+    display: inline-block
+}
+  
+.fields-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+::placeholder{
+    color: #cecece;
+    text-align: center;
+}
+
+.fields-container input {
+    font-size: 1.5em;
+    padding: .1em .25em;
+    background-color: hsla(201, 100%, 91%, 0.3);
+    border: 1px solid hsl(201, 100%, 6%);
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 14px;
+    font-weight: lighter;
+}
+
+.fields-container input:focus {
+    border: 1px solid hsl(201, 100%, 50%)
+}
+
+.login-contaniner{
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 1.0em;
+}
+
+.login{
+    color: #00a6ff;
+    text-decoration: underline;
+  }
+
+
+.name-fields {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+        gap: 10px;
+        max-width: 180px;
+
+}
+.name-fields input{
+    display:flex;
+    width: 100%;
+    
+    justify-content: space-between;
+    border-radius: 5px;
+    border: solid 2px#0070c0;
+    
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.email{
+    border: solid 2px#0070c0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.sign-button {
+    padding: 15px 0px 10px 0px;
+    border-radius: 20px; 
+    background-color: #4782da;
+    border: 1px solid #0070c0;
+    outline: none;
+    font-size: 1.5em;
+    color: white;
+    font-weight: lighter;
+    margin-top: 20px;
+    width: 40%;
+    max-width: 180px;
+    cursor: pointer;
+}
+
+
+.sign-button:hover, .sign-button:focus {
+    background-color: #00a6ff
+}
+
+.sign-button:active {
+    background-color: #00a1ff
+}

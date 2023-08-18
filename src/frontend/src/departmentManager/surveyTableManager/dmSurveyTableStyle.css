@@ -1,0 +1,26 @@
+/* dmSurveyStyle.css */
+
+.action-button {
+  padding: 8px 16px;
+  background-color: rgb(0, 112, 192);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.approve-button:hover {
+  background-color: #219800;
+}
+
+.deny-button:hover {
+  background-color: #a90202;
+}
+
+.statistics-button:hover {
+  background-color: #ff8c00;
+}
+
+.see-answers-button:hover {
+  background-color: #4b0082;
+}

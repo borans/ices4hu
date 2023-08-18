@@ -1,0 +1,62 @@
+
+
+table {
+  border-collapse: separate;
+  margin: 20px auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+table thead tr {
+  background-color: rgb(0, 112, 192);
+  color: #ffffff;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid red;
+}
+
+table::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+ tfoot {
+  border-top: 2px solid red;
+}
+
+table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+  @media screen and (max-width: 768px) {
+    .openSurvey {
+      font-size: 13px;
+      padding: 7px 9px;
+    }
+  }
+
+  
+  @media screen and (max-width: 586px) {
+    .openSurvey {
+      font-size: 7px;
+      padding: 5px 6px;
+    }
+  }
+

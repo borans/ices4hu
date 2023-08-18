@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.withside{
+padding-left: 5%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: center;
+  margin: 2%;
+}
+
+h1.page-title {
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.page-title .folder-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+h1.page-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(0, 112, 192);
+}
+
+.survey-table {
+  border-collapse: separate;
+  margin: 20px auto;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.survey-table thead tr {
+  background-color: rgb(0, 112, 192);
+  color: #ffffff;
+  text-align: left;
+}
+
+.survey-table th,
+.survey-table td {
+  padding: 12px 15px;
+}
+
+.survey-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.survey-table tbody tr:last-of-type {
+  border-bottom: 2px solid red;
+}
+
+.survey-table::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+.survey-table tfoot {
+  border-top: 2px solid red;
+}
+
+.action-button {
+  padding: 8px 16px;
+  background-color: rgb(0, 112, 192);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: rgb(0, 69, 118);
+}
+
+.survey-table .deny-button:hover {
+  background-color: #a90202;
+}
+
+.survey-table .approve-button:hover {
+  background-color: #219800;
+}
+
+
+.survey-table tbody tr:hover {
+  background-color: #f5f5f5;
+}

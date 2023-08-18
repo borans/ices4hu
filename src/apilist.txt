@@ -1,0 +1,8 @@
+DEMO 1 
+--------------------------------------------------------------------------------------
+Login: http://localhost:8080/api/auth/login
+Signup: http://localhost:8080/api/auth/signup
+Student's course: http://localhost:8080/api/survey?user={ogrencininkullaniciadi}
+Student - Answer the survey: http://localhost:8080/api/survey/view?survey=surveyId&student=ogrencininkullaniciadi
+
+logout -- frontendden yapilacak.

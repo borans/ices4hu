@@ -1,0 +1,82 @@
+.survey-question {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #F6F1F1;
+  }
+  
+  .survey-question label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .survey-question .answer {
+    font-weight: normal;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 8px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .choice {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+  }
+
+  input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #000;
+  }
+
+  input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    color: #666;
+    top: 5px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+  }
+  
+  input[type="radio"]:checked::before {
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 5px;
+    top: 3px;
+    content: '\02143';
+    transform: rotate(40deg);
+  }
+  
+  input[type="radio"]:hover {
+    background-color: #f2f2f2;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+  }
+  
+  input[type="radio"]:checked::before {
+    color: white;
+  }
+  

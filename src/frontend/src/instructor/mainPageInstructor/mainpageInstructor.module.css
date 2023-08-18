@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+.coursesDiv {
+  padding: 2%;
+  margin: 2%;
+}
+
+.surveysDiv {
+  padding: 2%;
+  margin: 2%;
+}
+
+.qbDiv {
+  padding: 2%;
+  margin: 2%;
+}
+
+.scheduleDiv {
+  padding: 2%;
+  margin: 2%;
+}
+
+.ul {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  list-style-type: none;
+}
+
+.li {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+.label {
+    color: rgb(0,112,192);
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 3rem Raleway;
+  }
+
+  @media (max-width: 768px) {
+    .ul {
+      display: block;
+    }
+    .li {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+.course {
+  --fill-color: rgb(182, 4, 0);
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  font: 700 3rem Raleway, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px var(--fill-color);
+  background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+  color: transparent;
+  background-clip: text;
+  transition: 0.5s linear;
+  &:hover {
+  background-size: 100%;
+  }
+}
+
+
+.qb {
+    --fill-color: rgb(235, 81, 81);
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 3rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
+    &:hover {
+    background-size: 100%;
+    }
+  }
+
+  .surveys {
+    --fill-color: rgb(45, 197, 206);
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 3rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
+    &:hover {
+    background-size: 100%;
+    }
+  }
+
+  .schedule {
+    --fill-color: rgb(140, 198, 62);
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    font: 700 3rem Raleway, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--fill-color);
+    background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: 0.5s linear;
+    &:hover {
+    background-size: 100%;
+    }
+  }
+
+ .button {
+  position: relative;
+  left: 850px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  height: 38px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background-image: linear-gradient(180deg,#7c8aff, #0070c0);
+  box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
+  transition: all .2s ease-out;
+  :hover{
+      box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
+  }
+ }
+
+ 
+@media (max-width: 768px) {
+  .course {
+    font-size: 2.5rem;
+  }
+  .surveys {
+    font-size: 2.5rem;
+  }
+  .reg{
+    font-size: 2.5rem;
+  }
+  .schedule{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .course {
+    font-size: 2rem;
+  }
+  .surveys {
+    font-size: 2rem;
+  }
+  .reg{
+    font-size: 2rem;
+  }
+  .schedule{
+    font-size: 2rem;
+  }
+}
+  
+  

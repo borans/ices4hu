@@ -1,0 +1,68 @@
+
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  height: 100%;
+  padding: 0;
+  margin: 2%;
+  margin-left: 10%;
+  box-sizing: border-box;
+  
+}
+
+.form {
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #FEFBF6;
+  border-radius: 5px;
+}
+
+.form label {
+  
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  background-color: #273642;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #46515e;
+}
+
+@media (min-width: 768px) {
+  .survey-form {
+    flex-wrap: nowrap;
+  }
+
+  .form {
+    width: 80%;
+    max-width: none;
+    height: 100%;
+    margin-left: 20px;
+  }
+}
+
+.survey-question label {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
